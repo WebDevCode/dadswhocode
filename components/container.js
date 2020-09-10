@@ -7,6 +7,7 @@ const Container = ({ children }) => (
                 width: 90%;
                 max-width: 1200px;
                 margin: 0 auto;
+                height: auto;
             }
             @media all and (min-width: 568px) {
                 .container {
