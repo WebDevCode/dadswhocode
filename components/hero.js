@@ -1,24 +1,28 @@
+import Container from "./container";
 const Hero = ({ imageSrc }) => {
     return (
         <>
-            <div className="hero">
-                <img
-                    className="hero-img"
-                    src={imageSrc}
-                    alt="manila city lights at night"
-                />
-            </div>
+            <section className="hero">
+                <Container>
+                    <img
+                        className="hero-img"
+                        src={imageSrc}
+                        alt="manila city lights at night"
+                    />
+                </Container>
+            </section>
+
             <style jsx>
                 {`
                     .hero {
                         display: flex;
                         height: 430px;
                         width: 100%;
+                        background: black;
                     }
                     .hero-img {
                         width: 100%;
                         object-fit: cover;
-                        /*object-position: bottom;*/
                     }
                     @media all and (max-width: 768px) {
                         .hero {

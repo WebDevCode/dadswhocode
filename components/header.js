@@ -60,7 +60,7 @@ const Header = ({ siteTitle }) => {
             <style jsx>{`
                 .header {
                     background-color: #ffffff;
-                    height: 52px;
+                    height: 60px;
                     display: flex;
                 }
                 .header-wrapper {
@@ -73,8 +73,8 @@ const Header = ({ siteTitle }) => {
                     background-color: #000000;
                     padding: 0 10px;
                     flex: 0 1 auto;
-                    display: flex;
                 }
+
                 .site-title h1 {
                     margin: 0;
                     font-size: 48px;
