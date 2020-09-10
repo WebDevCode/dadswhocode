@@ -24,6 +24,7 @@ const Home = () => {
                 {`
                     .featured-wrapper {
                         position: relative;
+                        margin-bottom: 40px;
                     }
                     .featured {
                         display: flex;

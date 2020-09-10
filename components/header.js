@@ -157,6 +157,16 @@ const Header = ({ siteTitle }) => {
                     .github:hover {
                         color: #f3f7f9;
                     }
+
+                    @media all and (max-width: 568px) {
+                        .site-title h1 {
+                            font-size: 28px;
+                            font-size: 1.75rem;
+                        }
+                        .icon {
+                            padding: 0 8px;
+                        }
+                    }
                 }
             `}</style>
         </>
