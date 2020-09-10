@@ -18,7 +18,7 @@ const Hero = ({ imageSrc }) => {
                     .hero-img {
                         width: 100%;
                         object-fit: cover;
-                        object-position: bottom;
+                        /*object-position: bottom;*/
                     }
                     @media all and (max-width: 768px) {
                         .hero {
