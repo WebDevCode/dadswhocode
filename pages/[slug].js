@@ -22,3 +22,10 @@ export async function getStaticProps({}) {
         },
     };
 }
+
+export async function getStaticPaths() {
+    return {
+        paths: ["/blog"],
+        fallback: false,
+    };
+}
