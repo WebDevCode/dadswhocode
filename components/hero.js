@@ -1,5 +1,5 @@
 import Container from "./container";
-const Hero = ({ imageSrc }) => {
+const Hero = ({ imageSrc, isHome }) => {
     return (
         <>
             <section className="hero">
@@ -19,6 +19,7 @@ const Hero = ({ imageSrc }) => {
                         height: 430px;
                         width: 100%;
                         background: black;
+                        margin-top: ${isHome ? 0 : "10px"};
                     }
                     .hero-img {
                         width: 100%;

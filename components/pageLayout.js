@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/header";
+import BlogTitle from "../components/blogTitle";
 import Hero from "../components/hero";
 import Footer from "../components/footer";
 
@@ -9,7 +10,19 @@ const PageLayout = ({ allPostData, siteTitle, isHome, children }) => {
         <>
             <div className="container">
                 <Header siteTitle={siteTitle} />
-                {isHome ? <Hero imageSrc={image} /> : null}
+                {isHome ? (
+                    <Hero imageSrc={image} isHome={isHome} />
+                ) : (
+                    <>
+                        <BlogTitle
+                            title="This is a really really long blog post Title"
+                            readTime="10 mins"
+                            author="Tinu George"
+                        >
+                            <Hero imageSrc={image} isHome={isHome} />
+                        </BlogTitle>
+                    </>
+                )}
                 <main>{children}</main>
                 <Footer siteTitle={siteTitle} />
             </div>
