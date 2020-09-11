@@ -163,6 +163,9 @@ const Header = ({ siteTitle }) => {
                             font-size: 28px;
                             font-size: 1.75rem;
                         }
+                        .social-icons {
+                            top: 8px;
+                        }
                         .icon {
                             padding: 0 8px;
                         }

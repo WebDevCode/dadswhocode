@@ -103,6 +103,9 @@ const Footer = ({ siteTitle }) => {
                         display: inline-block;
                         margin: 0 10px;
                     }
+                    .footer-social a:first-of-type{
+                        margin-left: 2px;
+                    }
 
                     .footer-sub {
                         width: 100%;
