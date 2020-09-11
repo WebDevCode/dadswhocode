@@ -15,7 +15,7 @@ const Post = (props) => {
 
 export default Post;
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({}) {
     return {
         props: {
             post: {},
