@@ -4,7 +4,7 @@ import { SITE_TITLE, AUTHOR_BIO } from "../lib/constants";
 import PageLayout from "../components/pageLayout";
 import AuthorBio from "../components/authorBio";
 import BlogData from "../components/blogData";
-const Post = () => {
+const Post = (props) => {
     return (
         <PageLayout isHome={false} siteTitle={SITE_TITLE} allPostData={{}}>
             <BlogData />
@@ -14,3 +14,11 @@ const Post = () => {
 };
 
 export default Post;
+
+export async function getStaticProps({ params }) {
+    return {
+        props: {
+            post: {},
+        },
+    };
+}
