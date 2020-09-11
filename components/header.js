@@ -18,7 +18,7 @@ const Header = ({ siteTitle }) => {
                             <h1>{siteTitle}</h1>
                         </div>
                         <nav className="header-nav">
-                            <Link href="/">
+                            <Link href="/blog">
                                 <a>Blog</a>
                             </Link>
                             <Link href="/">
