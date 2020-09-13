@@ -1,43 +1,12 @@
 import Container from "./container";
+import ReactMarkdown from "react-markdown";
 
-const BlogData = () => {
+const BlogData = ({ content }) => {
     return (
         <>
             <Container>
                 <div className="entry-content">
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Sunt est libero sit omnis vero at. Neque sunt
-                        repellat eius repudiandae sapiente nam tempore magnam,
-                        dolore minus! Pariatur debitis alias ea.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Sunt est libero sit omnis vero at. Neque sunt
-                        repellat eius repudiandae sapiente nam tempore magnam,
-                        dolore minus! Pariatur debitis alias ea. Lorem ipsum
-                        dolor sit amet consectetur, adipisicing elit. Provident
-                        ea, facere ab deserunt, velit eius fugiat necessitatibus
-                        itaque maiores blanditiis tempora odio odit perferendis
-                        recusandae laborum assumenda, at hic sunt. Lorem ipsum
-                        dolor sit amet consectetur adipisicing elit. Aperiam
-                        deserunt illo dolorum voluptatibus. Consectetur vel,
-                        omnis doloribus aliquid quas obcaecati, sequi veniam
-                        laudantium repellendus, quisquam voluptatum odio
-                        cupiditate nihil a.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Sunt est libero sit omnis vero at. Neque sunt
-                        repellat eius repudiandae sapiente nam tempore magnam,
-                        dolore minus! Pariatur debitis alias ea.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Sunt est libero sit omnis vero at. Neque sunt
-                        repellat eius repudiandae sapiente nam tempore magnam,
-                        dolore minus! Pariatur debitis alias ea.
-                    </p>
+                    <ReactMarkdown source={content} />
                 </div>
             </Container>
             <style jsx>

@@ -5,17 +5,22 @@ import {
     faTwitter,
     faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { TWITTER_HANDLE, FB_HANDLE, GITHUB_HANDLE } from "../lib/constants";
+import {
+    TWITTER_HANDLE,
+    FB_HANDLE,
+    GITHUB_HANDLE,
+    SITE_TITLE,
+} from "../lib/constants";
 import Link from "next/link";
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
     return (
         <>
             <header className="header">
                 <Container>
                     <div className="header-wrapper">
                         <div className="site-title">
-                            <h1>{siteTitle}</h1>
+                            <h1>{SITE_TITLE}</h1>
                         </div>
                         <nav className="header-nav">
                             <Link href="/blog">

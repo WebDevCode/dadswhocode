@@ -4,18 +4,24 @@ import BlogTitle from "../components/blogTitle";
 import Hero from "../components/hero";
 import Footer from "../components/footer";
 
-const PageLayout = ({ allPostData, siteTitle, isHome, children }) => {
+const PageLayout = ({
+    allPostData,
+    siteTitle,
+    isHome,
+    children,
+    blogTitle,
+}) => {
     const image = "static/hero.jpg";
     return (
         <>
             <div className="container">
-                <Header siteTitle={siteTitle} />
+                <Header />
                 {isHome ? (
                     <Hero imageSrc={image} isHome={isHome} />
                 ) : (
                     <>
                         <BlogTitle
-                            title="This is a really really long blog post Title"
+                            title={isHome || blogTitle}
                             readTime="10 mins"
                             author="Tinu George"
                         >

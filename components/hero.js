@@ -18,7 +18,7 @@ const Hero = ({ imageSrc, isHome }) => {
                         display: flex;
                         height: 430px;
                         width: 100%;
-                        background: black;
+                        background: ${isHome ? "black" : "none"};
                         margin-top: ${isHome ? 0 : "10px"};
                     }
                     .hero-img {

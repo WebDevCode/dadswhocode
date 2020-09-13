@@ -2,10 +2,10 @@ import Container from "./container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAt, faClock } from "@fortawesome/free-solid-svg-icons";
 
-const BlogTitle = ({ title, readTime, author, children }) => {
+const BlogTitle = ({ title, readTime, author }) => {
     return (
         <>
-            <div className="title-wrapper">
+            <section className="title-wrapper">
                 <Container>
                     <div className="title-body">
                         <h1 className="blog-title">{title}</h1>
@@ -27,8 +27,8 @@ const BlogTitle = ({ title, readTime, author, children }) => {
                         </div>
                     </div>
                 </Container>
-            </div>
-            <Container>{children}</Container>
+            </section>
+
             <style jsx>{`
                 .title-wrapper {
                     margin: 30px 0 10px;
