@@ -1,12 +1,16 @@
 import Container from "./container";
 import ReactMarkdown from "react-markdown";
+import CodeBlock from "./codeBlock";
 
 const BlogData = ({ content }) => {
     return (
         <>
             <Container>
                 <div className="entry-content">
-                    <ReactMarkdown source={content} />
+                    <ReactMarkdown
+                        source={content}
+                        renderers={{ code: CodeBlock }}
+                    />
                 </div>
             </Container>
             <style jsx>

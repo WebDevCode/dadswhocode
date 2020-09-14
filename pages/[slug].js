@@ -8,7 +8,7 @@ import { getAllPosts, getPostBySlug } from "../lib/api";
 const Post = (props) => {
     const { title, author, content, coverImage, readTime } = props.post;
     const router = useRouter();
-    console.log(props);
+
     return (
         <PostLayout
             blogTitle={title}
