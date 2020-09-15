@@ -10,8 +10,6 @@ const CodeBlock = ({ language, value }) => {
             customStyle={{
                 backgroundColor: "#0c1e29",
                 width: "100%",
-                whiteSpace: "pre-wrap",
-                wordBreak: "break-word",
             }}
             codeTagProps={{ whiteSpace: "pre-wrap" }}
         >
