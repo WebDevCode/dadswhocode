@@ -11,7 +11,6 @@ const CodeBlock = ({ language, value }) => {
                 backgroundColor: "#0c1e29",
                 width: "100%",
             }}
-            codeTagProps={{ whiteSpace: "pre-wrap" }}
         >
             {value}
         </SyntaxHighlighter>
