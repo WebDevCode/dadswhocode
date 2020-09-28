@@ -1,15 +1,19 @@
 import Link from "next/link";
 import Container from "./container";
-import { SITE_TITLE } from "../lib/constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faFacebookF,
     faTwitter,
     faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { TWITTER_HANDLE, FB_HANDLE, GITHUB_HANDLE } from "../lib/constants";
+import {
+    TWITTER_HANDLE,
+    FB_HANDLE,
+    GITHUB_HANDLE,
+    SITE_TITLE,
+} from "../lib/constants";
 
-const Footer = ({ siteTitle }) => {
+const Footer = () => {
     return (
         <>
             <footer>
