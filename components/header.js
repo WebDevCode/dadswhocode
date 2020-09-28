@@ -23,7 +23,7 @@ const Header = () => {
                             <h1>{SITE_TITLE}</h1>
                         </div>
                         <nav className="header-nav">
-                            <Link href="/blog">
+                            <Link href="/">
                                 <a>Blog</a>
                             </Link>
                             <Link href="/">

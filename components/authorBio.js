@@ -21,7 +21,7 @@ const AuthorBio = ({ bio, isHome }) => {
                     .featured-wrapper {
                         position: relative;
                         margin-bottom: ${isHome ? "40px" : 0};
-                        margin-top: ${isHome ? 0 : "120px"};
+                        margin-top: 120px;
                     }
                     .featured {
                         display: flex;
@@ -39,7 +39,7 @@ const AuthorBio = ({ bio, isHome }) => {
                         height: 200px;
                         border: 5px solid #fff;
                         border-radius: 50%;
-                        margin-top: ${isHome ? "-20px" : "-100px"};
+                        margin-top: -100px;
                         box-shadow: inset 2px 0px 4px rgba(0, 0, 0, 0.5),
                             0 2px 4px rgba(233, 233, 233, 1);
                     }
