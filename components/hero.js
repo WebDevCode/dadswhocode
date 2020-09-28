@@ -4,22 +4,22 @@ const Hero = ({ imageSrc, isHome, isAmp }) => {
         <>
             <section className="hero">
                 <Container>
-                    {!isAmp ? (
-                        <img
-                            className="hero-img"
-                            src={imageSrc}
-                            alt="manila city lights at night"
-                        />
-                    ) : (
+                    {isAmp ? (
                         <div className="outer">
                             <amp-img
                                 alt="A view of the sea"
                                 src={imageSrc}
                                 width="1920"
-                                height="720"
+                                height="1080"
                                 layout="responsive"
                             ></amp-img>
                         </div>
+                    ) : (
+                        <img
+                            className="hero-img"
+                            src={imageSrc}
+                            alt="manila city lights at night"
+                        />
                     )}
                 </Container>
             </section>
