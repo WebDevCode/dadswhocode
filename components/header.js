@@ -85,6 +85,8 @@ const Header = () => {
                     font-size: 48px;
                     font-size: 3rem;
                     color: #ffffff;
+                    font-family: "Roboto Slab", Roboto, Arial, Helvetica,
+                        sans-serif;
                 }
                 .header-nav {
                     display: flex;
@@ -96,6 +98,9 @@ const Header = () => {
                 }
                 .header-nav > a {
                     color: #3a0088;
+                    text-decoration: none;
+                    font-family: Roboto, Arial, Helvetica, sans-serif;
+                    font-size: 20px;
                 }
                 .header-nav > a:hover {
                     color: #000000;

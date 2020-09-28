@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import { useAmp } from "next/amp";
 import Head from "next/head";
 import Layout from "../components/layout";
 import BlogTitle from "../components/blogTitle";
@@ -8,7 +9,10 @@ import AuthorBio from "../components/authorBio";
 import { AUTHOR_BIO, SITE_TITLE } from "../lib/constants";
 import { getAllPosts, getPostBySlug } from "../lib/api";
 
+export const config = { amp: "hybrid" };
+
 const Post = (props) => {
+    const isAmp = useAmp();
     const {
         title,
         author,
@@ -31,9 +35,16 @@ const Post = (props) => {
                     readTime={readTime}
                     author={author.name}
                 ></BlogTitle>
-                <Hero imageSrc={coverImage} />
+                <Hero imageSrc={coverImage} isAmp={isAmp} />
                 <BlogData content={content} />
                 <AuthorBio bio={AUTHOR_BIO} isHome={false} />
+                <style global jsx>
+                    {`
+                        body {
+                            background-color: #f3f7f9;
+                        }
+                    `}
+                </style>
             </Layout>
         </>
     );

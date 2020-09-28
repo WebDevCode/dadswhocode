@@ -44,6 +44,8 @@ const BlogTitle = ({ title, readTime, author }) => {
                     padding-bottom: 10px;
                     font-size: 64px;
                     font-size: 4rem;
+                    font-family: "Roboto Slab", Roboto, Arial, Helvetica,
+                        sans-serif;
                 }
                 .title-meta {
                     display: flex;

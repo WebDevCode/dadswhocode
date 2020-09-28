@@ -1,14 +1,26 @@
 import Container from "./container";
-const Hero = ({ imageSrc, isHome }) => {
+const Hero = ({ imageSrc, isHome, isAmp }) => {
     return (
         <>
             <section className="hero">
                 <Container>
-                    <img
-                        className="hero-img"
-                        src={imageSrc}
-                        alt="manila city lights at night"
-                    />
+                    {!isAmp ? (
+                        <img
+                            className="hero-img"
+                            src={imageSrc}
+                            alt="manila city lights at night"
+                        />
+                    ) : (
+                        <div className="outer">
+                            <amp-img
+                                alt="A view of the sea"
+                                src={imageSrc}
+                                width="1920"
+                                height="720"
+                                layout="responsive"
+                            ></amp-img>
+                        </div>
+                    )}
                 </Container>
             </section>
 
@@ -16,7 +28,7 @@ const Hero = ({ imageSrc, isHome }) => {
                 {`
                     .hero {
                         display: flex;
-                        height: 430px;
+                        height: auto;
                         width: 100%;
                         background: ${isHome ? "black" : "none"};
                         margin-top: ${isHome ? 0 : "10px"};
@@ -25,10 +37,11 @@ const Hero = ({ imageSrc, isHome }) => {
                         width: 100%;
                         object-fit: cover;
                     }
-                    @media all and (max-width: 768px) {
-                        .hero {
-                            height: 250px;
-                        }
+                    .outer {
+                        position: relative;
+                        max-width: 1200px;
+                        width: 100%;
+                        height: 100%;
                     }
                 `}
             </style>

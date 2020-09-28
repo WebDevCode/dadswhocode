@@ -7,7 +7,7 @@ author:
     name: JJ Kasper
     picture: "/blog/assets/images/authors/tinu.jpg"
 ogImage:
-    url: "/blog/assets/images/posts/dynamic-routing/manila.jpg"
+    url: "/blog/assets/images/posts/dynamic-routing/manila.webp"
 readTime: "20 mins"
 ---
 

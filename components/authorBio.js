@@ -60,11 +60,14 @@ const AuthorBio = ({ bio, isHome }) => {
                         font-size: 40px;
                         font-size: 2.5rem;
                         font-weight: 700;
+                        font-family: "Roboto Slab", Roboto, Arial, Helvetica,
+                            sans-serif;
                     }
                     .intro p {
                         font-size: 24px;
                         font-size: 1.5rem;
                         color: #23446b;
+                        font-family: Roboto, Arial, Helvetica, sans-serif;
                     }
                     .intro span {
                         color: #0b1d2899;
@@ -72,6 +75,7 @@ const AuthorBio = ({ bio, isHome }) => {
                         font-style: italic;
                         font-size: 18px;
                         font-size: 1.125rem;
+                        font-family: Roboto, Arial, Helvetica, sans-serif;
                     }
 
                     @media all and (max-width: 768px) {

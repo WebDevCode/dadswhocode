@@ -92,6 +92,7 @@ const Footer = () => {
                     }
                     .footer-site h1{
                         margin: 10px 0 2px;
+                        font-family: "Roboto Slab", Roboto, Arial, Helvetica, sans-serif;
                     }
 
                     .footer-social {
@@ -106,6 +107,7 @@ const Footer = () => {
                     .footer-social a {
                         display: inline-block;
                         margin: 0 10px;
+                        color:#9DDBFF;
                     }
                     .footer-social a:first-of-type{
                         margin-left: 2px;
@@ -124,6 +126,7 @@ const Footer = () => {
                         padding-top: 5px;
                         color:#9DDBFF;
                         color: hsla(202, 100%, 81%, 1);
+                        font-family: Roboto, Arial, Helvetica, sans-serif;
                     }
                     .hearts {
                         color: red;

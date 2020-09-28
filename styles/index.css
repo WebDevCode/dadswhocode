@@ -22,7 +22,9 @@ body {
     font-size: 1.25rem;
     font-weight: 400;
 }
-
+#__next {
+    background-color: #f3f7f9;
+}
 h1,
 h2,
 h3 {

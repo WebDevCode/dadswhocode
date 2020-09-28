@@ -17,13 +17,16 @@ const BlogData = ({ content }) => {
                 {`
                     .entry-content {
                         background: #ffff;
-                        margin: 40px 0 20px;
+                        margin: 10px 0 20px;
                         padding: 20px;
                         color: #23446b;
                         line-height: 1.5;
                         font-size: 20px;
                         font-size: 1.25rem;
                         min-width: 0;
+                        font-family: Roboto, Arial, Helvetica, sans-serif;
+                    }
+                    .entry-content p {
                     }
 
                     @media all and (max-width: 768px) {
