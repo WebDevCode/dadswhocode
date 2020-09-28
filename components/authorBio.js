@@ -1,12 +1,21 @@
 import Container from "./container";
-const AuthorBio = ({ bio, isHome }) => {
+const AuthorBio = ({ bio, isHome, isAmp }) => {
     return (
         <>
             <section className="featured-wrapper">
                 <Container>
                     <div className="featured">
                         <div className="profile-pic">
-                            <img src="static/profilepic.jpg" alt="" />
+                            {isAmp ? (
+                                <amp-img
+                                    src="static/profilepic.jpg"
+                                    alt="profile pic"
+                                    width="200"
+                                    height="200"
+                                ></amp-img>
+                            ) : (
+                                <img src="static/profilepic.jpg" alt="" />
+                            )}
                         </div>
                         <div className="intro">
                             <h1>Hi There!!</h1>
@@ -76,6 +85,9 @@ const AuthorBio = ({ bio, isHome }) => {
                         font-size: 18px;
                         font-size: 1.125rem;
                         font-family: Roboto, Arial, Helvetica, sans-serif;
+                    }
+                    amp-img {
+                        border-radius: 50%;
                     }
 
                     @media all and (max-width: 768px) {

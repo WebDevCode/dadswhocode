@@ -37,7 +37,7 @@ const Post = (props) => {
                 ></BlogTitle>
                 <Hero imageSrc={coverImage} isAmp={isAmp} />
                 <BlogData content={content} />
-                <AuthorBio bio={AUTHOR_BIO} isHome={false} />
+                <AuthorBio bio={AUTHOR_BIO} isHome={false} isAmp={isAmp} />
                 <style global jsx>
                     {`
                         body {
